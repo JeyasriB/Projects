@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url("https://jeyasrib.github.io/Projects/backgrounds.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    min-height: 100vh;
+}
+
+form{
+    width: min(100%,25em);
+    background-color: rgba(34, 67, 95, 0.192);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em 2em;
+    border-radius: 0.8em;
+    box-shadow: 20px 20px 20px rgba(20, 14, 14, 0.3);
+}
+
+.error-message{
+    color: #ff3434;
+    visibility: hidden;
+    transition: visibility 0.5s ease;
+}
+
+input,button{
+   
+    width: 100%;
+    padding: 1em;
+    outline: rgb(24, 1, 2);
+    color: rgb(17, 5, 5);
+    border: none;
+    border-radius: 0.8em;
+    transition: background-color 0.5s ease;
+}
+
+input{
+    background-color: #f8f3f338;
+    color: #140303;
+    border: 1px solid #70e4d1;
+}
+
+button{
+    background-color: #586bc09a;
+    margin-top: 2.5em;
+    cursor: pointer;
+}
+
+.shake{
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+        0%{
+            transform: translateX(0);
+        }
+        25%{
+            transform: translateX(-5px);
+        }
+        50%{
+            transform: translateX(5px);
+        }
+        75%{
+            transform: translateX(-5px);
+        }
+        100%{
+            transform: translateX(0);
+        }
+}
